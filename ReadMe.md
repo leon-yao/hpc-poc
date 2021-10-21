@@ -39,7 +39,7 @@ Master节点使用c5.xlarge机型的EC2实例。
     
 ### 执行完成后，会返回Master节点的IP地址，可以通过config.ini中指定的Key Pair进行SSH连接。
 
-ssh -i <Key Pari> ec2-user@<Master Node ip>
+ssh -i <Key Pari> ec2-user@ <Master Node ip>
 
 
 ## 2. 配置

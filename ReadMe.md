@@ -26,8 +26,8 @@ https://docs.aws.amazon.com/zh_cn/cli/latest/userguide/cli-configure-quickstart.
 
 ### 准备ParallelCluster配置文件
 
-配置文件示例见config-gred.ini文件。 
-config-gred.ini文件中配置了创建4个queue，分别使用不同的实例类型来运行Job。分别是：compute-m5-16xlarge,compute-m5-4xlarge,compute-p3-16xlarge,compute-m5-8xlarge
+配置文件示例见config.ini文件。 
+config.ini文件中配置了创建4个queue，分别使用不同的实例类型来运行Job。分别是：compute-m5-16xlarge,compute-m5-4xlarge,compute-p3-16xlarge,compute-m5-8xlarge
 
 Master节点使用c5.xlarge机型的EC2实例。
 
@@ -35,11 +35,9 @@ Master节点使用c5.xlarge机型的EC2实例。
 
 使用以下命令创建ParallelCluster集群
 
-    ~/.local/bin/pcluster create -c config-gred.ini p-cluster
+    ~/.local/bin/pcluster create -c config.ini p-cluster
     
 ### 执行完成后，会返回Master节点的IP地址，可以通过config.ini中指定的Key Pair进行SSH连接。
-
-ssh -i <Key Pari> ec2-user@ <Master Node ip>
 
 
 ## 2. 配置

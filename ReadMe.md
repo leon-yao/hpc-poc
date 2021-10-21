@@ -55,3 +55,22 @@ Master节点使用c5.xlarge机型的EC2实例。
 ## 4. 检查运行结果
 
 运行结果输出到：/path/to/c5-24xlarge-t192-uhrr_9.out
+
+
+
+## 参考命令
+
+### 运行在Controller Node
+
+    ~/.local/bin/pcluster list -- 列出所有创建好的ParallelCluster实例 
+    ~/.local/bin/pcluster status pcluster  -- 获得指定cluster的状态信息 
+    ~/.local/bin/pcluster stop pcluster -- stop指定cluster
+    ~/.local/bin/pcluster start roche-cluster -- start指定cluster
+    ~/.local/bin/pcluster update roche-cluster -c config-gred.ini -- 创建cluster
+
+### 运行在Master Node
+    squeue --列出所有sbatch jobs
+    scancel <jobid>  --取消指定job
+    sinfo --显示当前cluster的配置信息
+    sbatch <batch file> --运行sbatch job
+

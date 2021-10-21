@@ -45,8 +45,13 @@ Master节点使用c5.xlarge机型的EC2实例。
 参考ngs_pipeline_containerized_README.md进行环境部署工作。
 
 
-## 3. 创建ParallelCluster集群
+## 3. 通过sbatch运行job
 
+例如：
 
+    cd /path/to
+    sbatch m5-4xlarge-t32-uhrr.sbatch
 
-## 4. 运行
+## 4. 检查运行结果
+
+运行结果输出到：/path/to/c5-24xlarge-t192-uhrr_9.out

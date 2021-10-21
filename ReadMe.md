@@ -40,7 +40,9 @@ Master节点使用c5.xlarge机型的EC2实例。
 ### 执行完成后，会返回Master节点的IP地址，可以通过config.ini中指定的Key Pair进行SSH连接。
 
 
-## 2. 配置
+## 2. 部署容器运行环境
+
+参考ngs_pipeline_containerized_README.md进行环境部署工作。
 
 
 ## 3. 创建ParallelCluster集群
